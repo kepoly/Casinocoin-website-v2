@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^explorer\.casinocoin\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.explorer\.casinocoin\.org$
+RewriteRule ^/?$ "http\:\/\/explorer\.casinocoin\.org\/block_crawler\.php" [R=301,L]
+
